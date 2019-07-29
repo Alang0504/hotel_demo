@@ -6,6 +6,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
 //@MapperScan("com.example.hotel_demo.mapper")
+//测试合并分支
 public class HotelDemoApplication {
 
     public static void main(String[] args) {
