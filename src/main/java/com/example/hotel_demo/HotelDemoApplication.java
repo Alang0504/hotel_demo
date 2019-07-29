@@ -5,7 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//@MapperScan("com.example.hotel_demo.mapper")
+//@MapperScan("com.example.hotel_demo.mapper"),测试commit按钮，刷卡机
 public class HotelDemoApplication {
 
     public static void main(String[] args) {
