@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.example.hotel_demo.mapper.OrderdetailsMapper" >
+  <resultMap id="BaseResultMap" type="com.example.hotel_demo.model.Orderdetails" >
+    <id column="id" property="id" jdbcType="INTEGER" />
+    <result column="orders_id" property="ordersId" jdbcType="INTEGER" />
+    <result column="room_id" property="roomId" jdbcType="INTEGER" />
+    <result column="in_time" property="inTime" jdbcType="DATE" />
+    <result column="out_time" property="outTime" jdbcType="DATE" />
+  </resultMap>
+  <sql id="Example_Where_Clause" >
+    <where >
+      <foreach collection="oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Update_By_Example_Where_Clause" >
+    <where >
+      <foreach collection="example.oredCriteria" item="criteria" separator="or" >
+        <if test="criteria.valid" >
+          <trim prefix="(" suffix=")" prefixOverrides="and" >
+            <foreach collection="criteria.criteria" item="criterion" >
+              <choose >
+                <when test="criterion.noValue" >
+                  and ${criterion.condition}
+                </when>
+                <when test="criterion.singleValue" >
+                  and ${criterion.condition} #{criterion.value}
+                </when>
+                <when test="criterion.betweenValue" >
+                  and ${criterion.condition} #{criterion.value} and #{criterion.secondValue}
+                </when>
+                <when test="criterion.listValue" >
+                  and ${criterion.condition}
+                  <foreach collection="criterion.value" item="listItem" open="(" close=")" separator="," >
+                    #{listItem}
+                  </foreach>
+                </when>
+              </choose>
+            </foreach>
+          </trim>
+        </if>
+      </foreach>
+    </where>
+  </sql>
+  <sql id="Base_Column_List" >
+    id, orders_id, room_id, in_time, out_time
+  </sql>
+  <select id="selectByExample" resultMap="BaseResultMap" parameterType="com.example.hotel_demo.model.OrderdetailsExample" >
+    select
+    <if test="distinct" >
+      distinct
+    </if>
+    <include refid="Base_Column_List" />
+    from orderdetails
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+    <if test="orderByClause != null" >
+      order by ${orderByClause}
+    </if>
+  </select>
+  <select id="selectByPrimaryKey" resultMap="BaseResultMap" parameterType="java.lang.Integer" >
+    select 
+    <include refid="Base_Column_List" />
+    from orderdetails
+    where id = #{id,jdbcType=INTEGER}
+  </select>
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Integer" >
+    delete from orderdetails
+    where id = #{id,jdbcType=INTEGER}
+  </delete>
+  <delete id="deleteByExample" parameterType="com.example.hotel_demo.model.OrderdetailsExample" >
+    delete from orderdetails
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </delete>
+  <insert id="insert" parameterType="com.example.hotel_demo.model.Orderdetails" >
+    insert into orderdetails (id, orders_id, room_id, 
+      in_time, out_time)
+    values (#{id,jdbcType=INTEGER}, #{ordersId,jdbcType=INTEGER}, #{roomId,jdbcType=INTEGER}, 
+      #{inTime,jdbcType=DATE}, #{outTime,jdbcType=DATE})
+  </insert>
+  <insert id="insertSelective" parameterType="com.example.hotel_demo.model.Orderdetails" >
+    insert into orderdetails
+    <trim prefix="(" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        id,
+      </if>
+      <if test="ordersId != null" >
+        orders_id,
+      </if>
+      <if test="roomId != null" >
+        room_id,
+      </if>
+      <if test="inTime != null" >
+        in_time,
+      </if>
+      <if test="outTime != null" >
+        out_time,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides="," >
+      <if test="id != null" >
+        #{id,jdbcType=INTEGER},
+      </if>
+      <if test="ordersId != null" >
+        #{ordersId,jdbcType=INTEGER},
+      </if>
+      <if test="roomId != null" >
+        #{roomId,jdbcType=INTEGER},
+      </if>
+      <if test="inTime != null" >
+        #{inTime,jdbcType=DATE},
+      </if>
+      <if test="outTime != null" >
+        #{outTime,jdbcType=DATE},
+      </if>
+    </trim>
+  </insert>
+  <select id="countByExample" parameterType="com.example.hotel_demo.model.OrderdetailsExample" resultType="java.lang.Integer" >
+    select count(*) from orderdetails
+    <if test="_parameter != null" >
+      <include refid="Example_Where_Clause" />
+    </if>
+  </select>
+  <update id="updateByExampleSelective" parameterType="map" >
+    update orderdetails
+    <set >
+      <if test="record.id != null" >
+        id = #{record.id,jdbcType=INTEGER},
+      </if>
+      <if test="record.ordersId != null" >
+        orders_id = #{record.ordersId,jdbcType=INTEGER},
+      </if>
+      <if test="record.roomId != null" >
+        room_id = #{record.roomId,jdbcType=INTEGER},
+      </if>
+      <if test="record.inTime != null" >
+        in_time = #{record.inTime,jdbcType=DATE},
+      </if>
+      <if test="record.outTime != null" >
+        out_time = #{record.outTime,jdbcType=DATE},
+      </if>
+    </set>
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByExample" parameterType="map" >
+    update orderdetails
+    set id = #{record.id,jdbcType=INTEGER},
+      orders_id = #{record.ordersId,jdbcType=INTEGER},
+      room_id = #{record.roomId,jdbcType=INTEGER},
+      in_time = #{record.inTime,jdbcType=DATE},
+      out_time = #{record.outTime,jdbcType=DATE}
+    <if test="_parameter != null" >
+      <include refid="Update_By_Example_Where_Clause" />
+    </if>
+  </update>
+  <update id="updateByPrimaryKeySelective" parameterType="com.example.hotel_demo.model.Orderdetails" >
+    update orderdetails
+    <set >
+      <if test="ordersId != null" >
+        orders_id = #{ordersId,jdbcType=INTEGER},
+      </if>
+      <if test="roomId != null" >
+        room_id = #{roomId,jdbcType=INTEGER},
+      </if>
+      <if test="inTime != null" >
+        in_time = #{inTime,jdbcType=DATE},
+      </if>
+      <if test="outTime != null" >
+        out_time = #{outTime,jdbcType=DATE},
+      </if>
+    </set>
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+  <update id="updateByPrimaryKey" parameterType="com.example.hotel_demo.model.Orderdetails" >
+    update orderdetails
+    set orders_id = #{ordersId,jdbcType=INTEGER},
+      room_id = #{roomId,jdbcType=INTEGER},
+      in_time = #{inTime,jdbcType=DATE},
+      out_time = #{outTime,jdbcType=DATE}
+    where id = #{id,jdbcType=INTEGER}
+  </update>
+</mapper>

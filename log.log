@@ -1,0 +1,751 @@
+2019-05-04 19:38:04.716  INFO 8164 --- [main] c.e.hotel_demo.HotelDemoApplication      : Starting HotelDemoApplication on CZH-PC with PID 8164 (E:\IDEA\hotel_demo\target\classes started by CZH in E:\IDEA\hotel_demo)
+2019-05-04 19:38:04.721  INFO 8164 --- [main] c.e.hotel_demo.HotelDemoApplication      : No active profile set, falling back to default profiles: default
+2019-05-04 19:38:05.497  WARN 8164 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roomMapper' and 'com.example.hotel_demo.mapper.RoomMapper' mapperInterface. Bean already defined with the same name!
+2019-05-04 19:38:05.498  INFO 8164 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2019-05-04 19:38:05.984  INFO 8164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-04 19:38:06.002  INFO 8164 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-04 19:38:06.003  INFO 8164 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-04 19:38:06.210  INFO 8164 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-04 19:38:06.214  INFO 8164 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-04 19:38:06.215 DEBUG 8164 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-05-04 19:38:06.215  INFO 8164 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1446 ms
+2019-05-04 19:38:06.593 DEBUG 8164 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-04 19:38:06.753  INFO 8164 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:38:06.763 DEBUG 8164 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-04 19:38:06.811 DEBUG 8164 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2019-05-04 19:38:06.815 DEBUG 8164 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/leftAdmin, /rightAdmin, /adminPage, /login, /register, /leftUser, /rightUser, /userPage, /editUserPassword, /addRoomPage, /editAdminPassword] in 'viewControllerHandlerMapping'
+2019-05-04 19:38:06.823 DEBUG 8164 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/**] in 'resourceHandlerMapping'
+2019-05-04 19:38:06.832 DEBUG 8164 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-04 19:38:06.973  INFO 8164 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-04 19:38:06.976  INFO 8164 --- [main] c.e.hotel_demo.HotelDemoApplication      : Started HotelDemoApplication in 2.696 seconds (JVM running for 3.475)
+2019-05-04 19:38:13.456  INFO 8164 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-04 19:38:13.456  INFO 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-04 19:38:13.456 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-05-04 19:38:13.464 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-05-04 19:38:13.465  INFO 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 9 ms
+2019-05-04 19:38:13.474 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:38:13.483 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:38:13.488 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:38:13.488 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:38:13.492 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:38:13.923 DEBUG 8164 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:38:24.816 DEBUG 8164 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:38:24.820 DEBUG 8164 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:38:24.997 DEBUG 8164 --- [http-nio-8080-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2019-05-04 19:38:24.998 DEBUG 8164 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2019-05-04 19:38:25.001 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/adminPage", parameters={}
+2019-05-04 19:38:25.002 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/adminPage"]
+2019-05-04 19:38:25.003 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:38:25.003 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : View name '/adminPage', model {}
+2019-05-04 19:38:25.003 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//adminPage.jsp]
+2019-05-04 19:38:25.101 DEBUG 8164 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:38:25.216 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/leftAdmin", parameters={}
+2019-05-04 19:38:25.218 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/rightAdmin", parameters={}
+2019-05-04 19:38:25.218 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/leftAdmin"]
+2019-05-04 19:38:25.219 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:38:25.219 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : View name '/leftAdmin', model {}
+2019-05-04 19:38:25.219 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//leftAdmin.jsp]
+2019-05-04 19:38:25.223 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/rightAdmin"]
+2019-05-04 19:38:25.225 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:38:25.226 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : View name '/rightAdmin', model {}
+2019-05-04 19:38:25.226 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//rightAdmin.jsp]
+2019-05-04 19:38:25.284 DEBUG 8164 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:38:25.284 DEBUG 8164 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:38:37.705 DEBUG 8164 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:38:37.707 DEBUG 8164 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:38:41.329 DEBUG 8164 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:38:41.330 DEBUG 8164 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@65dc721a, com.example.hotel_demo.model.Orders@2f29b5ce]}
+2019-05-04 19:38:41.335 DEBUG 8164 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:38:41.474 DEBUG 8164 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:41:44.140  INFO 8164 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:41:47.751  INFO 7872 --- [main] c.e.hotel_demo.HotelDemoApplication      : Starting HotelDemoApplication on CZH-PC with PID 7872 (E:\IDEA\hotel_demo\target\classes started by CZH in E:\IDEA\hotel_demo)
+2019-05-04 19:41:47.755  INFO 7872 --- [main] c.e.hotel_demo.HotelDemoApplication      : No active profile set, falling back to default profiles: default
+2019-05-04 19:41:48.582  WARN 7872 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roomMapper' and 'com.example.hotel_demo.mapper.RoomMapper' mapperInterface. Bean already defined with the same name!
+2019-05-04 19:41:48.583  INFO 7872 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2019-05-04 19:41:49.067  INFO 7872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-04 19:41:49.094  INFO 7872 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-04 19:41:49.095  INFO 7872 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-04 19:41:49.398  INFO 7872 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-04 19:41:49.402  INFO 7872 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-04 19:41:49.403 DEBUG 7872 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-05-04 19:41:49.403  INFO 7872 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1600 ms
+2019-05-04 19:41:49.771 DEBUG 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-04 19:41:49.931  INFO 7872 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:41:49.941 DEBUG 7872 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-04 19:41:49.985 DEBUG 7872 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2019-05-04 19:41:49.990 DEBUG 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/leftAdmin, /rightAdmin, /adminPage, /login, /register, /leftUser, /rightUser, /userPage, /editUserPassword, /addRoomPage, /editAdminPassword] in 'viewControllerHandlerMapping'
+2019-05-04 19:41:49.997 DEBUG 7872 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/**] in 'resourceHandlerMapping'
+2019-05-04 19:41:50.004 DEBUG 7872 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-04 19:41:50.137  INFO 7872 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-04 19:41:50.140  INFO 7872 --- [main] c.e.hotel_demo.HotelDemoApplication      : Started HotelDemoApplication in 2.758 seconds (JVM running for 3.468)
+2019-05-04 19:41:57.491  INFO 7872 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-04 19:41:57.491  INFO 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-04 19:41:57.491 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-05-04 19:41:57.499 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-05-04 19:41:57.499  INFO 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2019-05-04 19:41:57.509 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:41:57.516 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:41:57.521 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:41:57.521 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:41:57.524 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:41:57.907 DEBUG 7872 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:02.008 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:42:02.013 DEBUG 7872 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:42:02.193 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:02.193 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : View name 'login', model {user=com.example.hotel_demo.model.User@7e98a940, org.springframework.validation.BindingResult.user=org.springframework.validation.BeanPropertyBindingResult: 0 errors, loginMessage=用户名或密码错误}
+2019-05-04 19:42:02.193 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/login.jsp]
+2019-05-04 19:42:02.194 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:07.377 DEBUG 7872 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:42:07.379 DEBUG 7872 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:42:07.410 DEBUG 7872 --- [http-nio-8080-exec-3] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2019-05-04 19:42:07.411 DEBUG 7872 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2019-05-04 19:42:07.416 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/adminPage", parameters={}
+2019-05-04 19:42:07.417 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/adminPage"]
+2019-05-04 19:42:07.418 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:07.418 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name '/adminPage', model {}
+2019-05-04 19:42:07.418 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//adminPage.jsp]
+2019-05-04 19:42:07.493 DEBUG 7872 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:07.578 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/rightAdmin", parameters={}
+2019-05-04 19:42:07.579 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/leftAdmin", parameters={}
+2019-05-04 19:42:07.580 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/leftAdmin"]
+2019-05-04 19:42:07.581 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:07.581 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : View name '/leftAdmin', model {}
+2019-05-04 19:42:07.582 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//leftAdmin.jsp]
+2019-05-04 19:42:07.586 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/rightAdmin"]
+2019-05-04 19:42:07.587 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:07.587 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : View name '/rightAdmin', model {}
+2019-05-04 19:42:07.587 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//rightAdmin.jsp]
+2019-05-04 19:42:07.645 DEBUG 7872 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:07.645 DEBUG 7872 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:09.186 DEBUG 7872 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:42:09.187 DEBUG 7872 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:42:11.897 DEBUG 7872 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:11.898 DEBUG 7872 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[]}
+2019-05-04 19:42:11.899 DEBUG 7872 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:42:12.030 DEBUG 7872 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:42:22.985 DEBUG 7872 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:42:22.986 DEBUG 7872 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:42:43.858 DEBUG 7872 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:42:43.859 DEBUG 7872 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[]}
+2019-05-04 19:42:43.859 DEBUG 7872 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:42:43.862 DEBUG 7872 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:43:11.827 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:43:11.828 DEBUG 7872 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:43:14.270 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:43:14.271 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@75961c45]}
+2019-05-04 19:43:14.271 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:43:14.296 DEBUG 7872 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:12.397  INFO 7872 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:44:16.039  INFO 10868 --- [main] c.e.hotel_demo.HotelDemoApplication      : Starting HotelDemoApplication on CZH-PC with PID 10868 (E:\IDEA\hotel_demo\target\classes started by CZH in E:\IDEA\hotel_demo)
+2019-05-04 19:44:16.043  INFO 10868 --- [main] c.e.hotel_demo.HotelDemoApplication      : No active profile set, falling back to default profiles: default
+2019-05-04 19:44:16.937  WARN 10868 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roomMapper' and 'com.example.hotel_demo.mapper.RoomMapper' mapperInterface. Bean already defined with the same name!
+2019-05-04 19:44:16.938  INFO 10868 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2019-05-04 19:44:17.422  INFO 10868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-04 19:44:17.442  INFO 10868 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-04 19:44:17.442  INFO 10868 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-04 19:44:17.701  INFO 10868 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-04 19:44:17.706  INFO 10868 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-04 19:44:17.706 DEBUG 10868 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-05-04 19:44:17.706  INFO 10868 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1605 ms
+2019-05-04 19:44:18.137 DEBUG 10868 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-04 19:44:18.326  INFO 10868 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:44:18.337 DEBUG 10868 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-04 19:44:18.384 DEBUG 10868 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2019-05-04 19:44:18.388 DEBUG 10868 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/leftAdmin, /rightAdmin, /adminPage, /login, /register, /leftUser, /rightUser, /userPage, /editUserPassword, /addRoomPage, /editAdminPassword] in 'viewControllerHandlerMapping'
+2019-05-04 19:44:18.397 DEBUG 10868 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/**] in 'resourceHandlerMapping'
+2019-05-04 19:44:18.405 DEBUG 10868 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-04 19:44:18.549  INFO 10868 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-04 19:44:18.552  INFO 10868 --- [main] c.e.hotel_demo.HotelDemoApplication      : Started HotelDemoApplication in 3.057 seconds (JVM running for 3.803)
+2019-05-04 19:44:19.979  INFO 10868 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-04 19:44:19.979  INFO 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-04 19:44:19.979 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-05-04 19:44:19.984 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-05-04 19:44:19.984  INFO 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 5 ms
+2019-05-04 19:44:19.992 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:44:19.998 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:44:20.004 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:20.004 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:44:20.007 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:44:20.386 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:29.255 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:44:29.260 DEBUG 10868 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:29.444 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2019-05-04 19:44:29.445 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2019-05-04 19:44:29.447 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/adminPage", parameters={}
+2019-05-04 19:44:29.448 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/adminPage"]
+2019-05-04 19:44:29.449 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:29.449 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : View name '/adminPage', model {}
+2019-05-04 19:44:29.449 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//adminPage.jsp]
+2019-05-04 19:44:29.514 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:29.546 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/leftAdmin", parameters={}
+2019-05-04 19:44:29.547 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/rightAdmin", parameters={}
+2019-05-04 19:44:29.548 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/leftAdmin"]
+2019-05-04 19:44:29.548 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:29.548 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name '/leftAdmin', model {}
+2019-05-04 19:44:29.548 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//leftAdmin.jsp]
+2019-05-04 19:44:29.551 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/rightAdmin"]
+2019-05-04 19:44:29.553 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:29.554 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.view.JstlView            : View name '/rightAdmin', model {}
+2019-05-04 19:44:29.554 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//rightAdmin.jsp]
+2019-05-04 19:44:29.612 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:29.612 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:30.635 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:44:30.637 DEBUG 10868 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:33.114 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:33.115 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@67fec52, com.example.hotel_demo.model.Orders@58345adc]}
+2019-05-04 19:44:33.116 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:44:33.259 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:36.563 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:44:36.564 DEBUG 10868 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:38.048 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:38.049 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@da69e6d]}
+2019-05-04 19:44:38.050 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:44:38.053 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:41.292 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:44:41.293 DEBUG 10868 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:43.874 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:43.874 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[]}
+2019-05-04 19:44:43.875 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:44:43.876 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:44.947 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:44:44.948 DEBUG 10868 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:46.258 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:46.259 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@56475905, com.example.hotel_demo.model.Orders@1345dda9]}
+2019-05-04 19:44:46.260 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:44:46.263 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:44:51.988 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:44:51.988 DEBUG 10868 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:44:55.884 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:44:55.885 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[]}
+2019-05-04 19:44:55.886 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:44:55.887 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:45:02.715 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:45:02.716 DEBUG 10868 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:45:29.581 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:45:29.582 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[]}
+2019-05-04 19:45:29.583 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:45:29.584 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:45:49.515 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:45:49.516 DEBUG 10868 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:45:52.370 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:45:52.370 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@1735f099, com.example.hotel_demo.model.Orders@ade3fff]}
+2019-05-04 19:45:52.371 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:45:52.374 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:47:11.829 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:47:11.830 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:47:11.831 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:47:11.831 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:47:11.831 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:47:11.831 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:47:15.863 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:47:15.864 DEBUG 10868 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:47:15.886 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2019-05-04 19:47:15.887 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2019-05-04 19:47:15.892 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/room/findRoomByExample", parameters={}
+2019-05-04 19:47:15.893 DEBUG 10868 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.RoomController.findRoomByExample(org.springframework.ui.Model,com.example.hotel_demo.model.Room,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:47:16.298 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:47:16.298 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : View name 'queryListRoom', model {room=com.example.hotel_demo.model.Room@3f3b3771, org.springframework.validation.BindingResult.room=org.springframework.validation.BeanPropertyBindingResult: 0 errors, listRoom=[com.example.hotel_demo.model.Room@12584e77, com.example.hotel_demo.model.Room@762573ef, com.example.hotel_demo.model.Room@5a17cdc5, com.example.hotel_demo.model.Room@3c71f949, com.example.hotel_demo.model.Room@6c0a3346, com.example.hotel_demo.model.Room@316d9f23, com.example.hotel_demo.model.Room@55f0052e], userName=陈程程}
+2019-05-04 19:47:16.298 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryListRoom.jsp]
+2019-05-04 19:47:16.375 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:47:16.402 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/images/", parameters={}
+2019-05-04 19:47:16.409 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["file:E:/IDEA/hotel_demo/src/main/resources/static/images/"]
+2019-05-04 19:47:16.410 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-05-04 19:47:16.410 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2019-05-04 19:47:16.410 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2019-05-04 19:47:16.411 DEBUG 10868 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-04 19:47:16.436 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-05-04 19:47:16.437 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 04 19:47:16 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-05-04 19:47:16.479 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2019-05-04 19:47:17.699 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/user/queryMyOrders", parameters={}
+2019-05-04 19:47:17.700 DEBUG 10868 --- [http-nio-8080-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.queryMyOrders(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:47:18.085 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:47:18.085 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : View name 'queryListOrders', model {ordersList=[com.example.hotel_demo.model.Orders@2b76f631, com.example.hotel_demo.model.Orders@75c3bb7e, com.example.hotel_demo.model.Orders@5e2ad479, com.example.hotel_demo.model.Orders@6ccbb8bd, com.example.hotel_demo.model.Orders@70100c6b], message=null}
+2019-05-04 19:47:18.085 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryListOrders.jsp]
+2019-05-04 19:47:18.190 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:47:57.676 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/orders/findOrdersdetails?ordersId=2", parameters={masked}
+2019-05-04 19:47:57.677 DEBUG 10868 --- [http-nio-8080-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.OrdersController.findOrdersdetails(org.springframework.ui.Model,java.lang.Integer) throws java.lang.Exception
+2019-05-04 19:47:57.721 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:47:57.722 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name 'queryOrderdetails', model {orderdetailsList=[com.example.hotel_demo.model.Orderdetails@17502237]}
+2019-05-04 19:47:57.722 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryOrderdetails.jsp]
+2019-05-04 19:47:57.826 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:01.252 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/user/queryMyOrders", parameters={}
+2019-05-04 19:48:01.253 DEBUG 10868 --- [http-nio-8080-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.queryMyOrders(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:48:01.633 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:01.633 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : View name 'queryListOrders', model {ordersList=[com.example.hotel_demo.model.Orders@4edb8970, com.example.hotel_demo.model.Orders@6bb6c9b6, com.example.hotel_demo.model.Orders@731895ad, com.example.hotel_demo.model.Orders@49a72b7a, com.example.hotel_demo.model.Orders@5ba5bb37], message=null}
+2019-05-04 19:48:01.634 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryListOrders.jsp]
+2019-05-04 19:48:01.640 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:04.370 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/orders/findOrdersdetails?ordersId=8", parameters={masked}
+2019-05-04 19:48:04.371 DEBUG 10868 --- [http-nio-8080-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.OrdersController.findOrdersdetails(org.springframework.ui.Model,java.lang.Integer) throws java.lang.Exception
+2019-05-04 19:48:04.433 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:04.434 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name 'queryOrderdetails', model {orderdetailsList=[com.example.hotel_demo.model.Orderdetails@3f5689e8]}
+2019-05-04 19:48:04.434 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryOrderdetails.jsp]
+2019-05-04 19:48:04.436 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:04.447 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/images/", parameters={}
+2019-05-04 19:48:04.448 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["file:E:/IDEA/hotel_demo/src/main/resources/static/images/"]
+2019-05-04 19:48:04.448 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-05-04 19:48:04.449 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2019-05-04 19:48:04.449 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2019-05-04 19:48:04.450 DEBUG 10868 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-04 19:48:04.451 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-05-04 19:48:04.451 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 04 19:48:04 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-05-04 19:48:04.452 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2019-05-04 19:48:07.172 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/user/queryMyOrders", parameters={}
+2019-05-04 19:48:07.173 DEBUG 10868 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.queryMyOrders(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:48:07.431 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:07.432 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : View name 'queryListOrders', model {ordersList=[com.example.hotel_demo.model.Orders@4ce1a617, com.example.hotel_demo.model.Orders@38463c1d, com.example.hotel_demo.model.Orders@484a2b7, com.example.hotel_demo.model.Orders@65aa7963, com.example.hotel_demo.model.Orders@243aaadf], message=null}
+2019-05-04 19:48:07.432 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryListOrders.jsp]
+2019-05-04 19:48:07.434 DEBUG 10868 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:09.411 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/orders/findOrdersdetails?ordersId=3", parameters={masked}
+2019-05-04 19:48:09.412 DEBUG 10868 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.OrdersController.findOrdersdetails(org.springframework.ui.Model,java.lang.Integer) throws java.lang.Exception
+2019-05-04 19:48:09.455 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:09.455 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : View name 'queryOrderdetails', model {orderdetailsList=[com.example.hotel_demo.model.Orderdetails@267f93a5]}
+2019-05-04 19:48:09.455 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryOrderdetails.jsp]
+2019-05-04 19:48:09.458 DEBUG 10868 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:09.485 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/images/", parameters={}
+2019-05-04 19:48:09.486 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler ["file:E:/IDEA/hotel_demo/src/main/resources/static/images/"]
+2019-05-04 19:48:09.486 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2019-05-04 19:48:09.486 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2019-05-04 19:48:09.487 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2019-05-04 19:48:09.488 DEBUG 10868 --- [http-nio-8080-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2019-05-04 19:48:09.489 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/webp, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2019-05-04 19:48:09.489 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Sat May 04 19:48:09 CST 2019, status=404, error=Not Found, message=No message available,  (truncated)...]
+2019-05-04 19:48:09.490 DEBUG 10868 --- [http-nio-8080-exec-8] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2019-05-04 19:48:11.826 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/user/queryMyOrders", parameters={}
+2019-05-04 19:48:11.827 DEBUG 10868 --- [http-nio-8080-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.queryMyOrders(org.springframework.ui.Model,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:48:12.096 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:12.097 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : View name 'queryListOrders', model {ordersList=[com.example.hotel_demo.model.Orders@49db7fce, com.example.hotel_demo.model.Orders@6fec3a98, com.example.hotel_demo.model.Orders@1240f3b6, com.example.hotel_demo.model.Orders@78f64c5a, com.example.hotel_demo.model.Orders@6ac17985], message=null}
+2019-05-04 19:48:12.097 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/queryListOrders.jsp]
+2019-05-04 19:48:12.099 DEBUG 10868 --- [http-nio-8080-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:39.455 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:48:39.456 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:48:39.457 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:39.457 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:48:39.457 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:48:39.457 DEBUG 10868 --- [http-nio-8080-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:45.326 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:48:45.327 DEBUG 10868 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:48:45.485 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.view.RedirectView        : View name 'redirect:', model {}
+2019-05-04 19:48:45.485 DEBUG 10868 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2019-05-04 19:48:45.491 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/adminPage", parameters={}
+2019-05-04 19:48:45.492 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/adminPage"]
+2019-05-04 19:48:45.493 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:45.493 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name '/adminPage', model {}
+2019-05-04 19:48:45.493 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//adminPage.jsp]
+2019-05-04 19:48:45.493 DEBUG 10868 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:45.538 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/leftAdmin", parameters={}
+2019-05-04 19:48:45.538 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/leftAdmin"]
+2019-05-04 19:48:45.539 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:45.539 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : View name '/leftAdmin', model {}
+2019-05-04 19:48:45.539 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//leftAdmin.jsp]
+2019-05-04 19:48:45.539 DEBUG 10868 --- [http-nio-8080-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:45.541 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/rightAdmin", parameters={}
+2019-05-04 19:48:45.543 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/rightAdmin"]
+2019-05-04 19:48:45.544 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:48:45.544 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : View name '/rightAdmin', model {}
+2019-05-04 19:48:45.544 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//rightAdmin.jsp]
+2019-05-04 19:48:45.544 DEBUG 10868 --- [http-nio-8080-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:48:46.849 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/admin/financialStatistics?status=%E5%B7%B2%E4%BD%BF%E7%94%A8", parameters={masked}
+2019-05-04 19:48:46.850 DEBUG 10868 --- [http-nio-8080-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.AdminController.financialStatistics(java.lang.String,java.lang.String,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:49:46.996 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:49:46.997 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.view.JstlView            : View name 'financialManagement', model {ordersList=[com.example.hotel_demo.model.Orders@2a2f3c25, com.example.hotel_demo.model.Orders@666ad74c]}
+2019-05-04 19:49:46.997 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views/financialManagement.jsp]
+2019-05-04 19:49:46.998 DEBUG 10868 --- [http-nio-8080-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:55:10.293  INFO 10868 --- [Thread-7] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:55:14.318  INFO 10396 --- [main] c.e.hotel_demo.HotelDemoApplication      : Starting HotelDemoApplication on CZH-PC with PID 10396 (E:\IDEA\hotel_demo\target\classes started by CZH in E:\IDEA\hotel_demo)
+2019-05-04 19:55:14.323  INFO 10396 --- [main] c.e.hotel_demo.HotelDemoApplication      : No active profile set, falling back to default profiles: default
+2019-05-04 19:55:15.311  WARN 10396 --- [main] o.m.s.mapper.ClassPathMapperScanner      : Skipping MapperFactoryBean with name 'roomMapper' and 'com.example.hotel_demo.mapper.RoomMapper' mapperInterface. Bean already defined with the same name!
+2019-05-04 19:55:15.312  INFO 10396 --- [main] o.s.c.a.ConfigurationClassPostProcessor  : Cannot enhance @Configuration bean definition 'mybatisMapperScannerConfig' since its singleton instance has been created too early. The typical cause is a non-static @Bean method with a BeanDefinitionRegistryPostProcessor return type: Consider declaring such methods as 'static'.
+2019-05-04 19:55:15.838  INFO 10396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2019-05-04 19:55:15.858  INFO 10396 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2019-05-04 19:55:15.858  INFO 10396 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.17]
+2019-05-04 19:55:16.066  INFO 10396 --- [main] org.apache.jasper.servlet.TldScanner     : At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2019-05-04 19:55:16.071  INFO 10396 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2019-05-04 19:55:16.071 DEBUG 10396 --- [main] o.s.web.context.ContextLoader            : Published root WebApplicationContext as ServletContext attribute with name [org.springframework.web.context.WebApplicationContext.ROOT]
+2019-05-04 19:55:16.071  INFO 10396 --- [main] o.s.web.context.ContextLoader            : Root WebApplicationContext: initialization completed in 1696 ms
+2019-05-04 19:55:16.507 DEBUG 10396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/**/favicon.ico] in 'faviconHandlerMapping'
+2019-05-04 19:55:16.601  INFO 10396 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2019-05-04 19:55:16.611 DEBUG 10396 --- [main] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2019-05-04 19:55:16.655 DEBUG 10396 --- [main] s.w.s.m.m.a.RequestMappingHandlerMapping : 24 mappings in 'requestMappingHandlerMapping'
+2019-05-04 19:55:16.659 DEBUG 10396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/leftAdmin, /rightAdmin, /adminPage, /login, /register, /leftUser, /rightUser, /userPage, /editUserPassword, /addRoomPage, /editAdminPassword] in 'viewControllerHandlerMapping'
+2019-05-04 19:55:16.666 DEBUG 10396 --- [main] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**, /images/**] in 'resourceHandlerMapping'
+2019-05-04 19:55:16.674 DEBUG 10396 --- [main] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2019-05-04 19:55:16.809  INFO 10396 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2019-05-04 19:55:16.811  INFO 10396 --- [main] c.e.hotel_demo.HotelDemoApplication      : Started HotelDemoApplication in 3.034 seconds (JVM running for 3.921)
+2019-05-04 19:55:18.132  INFO 10396 --- [http-nio-8080-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2019-05-04 19:55:18.132  INFO 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2019-05-04 19:55:18.132 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2019-05-04 19:55:18.138 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2019-05-04 19:55:18.138  INFO 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 6 ms
+2019-05-04 19:55:18.146 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/login", parameters={}
+2019-05-04 19:55:18.152 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ParameterizableViewController [view="/login"]
+2019-05-04 19:55:18.158 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/webp, application/xml;q=0.9, */*;q=0.8]
+2019-05-04 19:55:18.158 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : View name '/login', model {}
+2019-05-04 19:55:18.161 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.view.JstlView            : Forwarding to [/WEB-INF/views//login.jsp]
+2019-05-04 19:55:18.517 DEBUG 10396 --- [http-nio-8080-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2019-05-04 19:55:23.777 DEBUG 10396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:55:23.784 DEBUG 10396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:55:23.966 DEBUG 10396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in com/example/hotel_demo/mapper/UserMapper.java (best guess)
+### The error may involve com.example.hotel_demo.mapper.UserMapper.selectByKeyAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+2019-05-04 19:55:23.970 ERROR 10396 --- [http-nio-8080-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in com/example/hotel_demo/mapper/UserMapper.java (best guess)
+### The error may involve com.example.hotel_demo.mapper.UserMapper.selectByKeyAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.] with root cause
+
+com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2241) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2265) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_181]
+	at java.sql.DriverManager.getConnection(DriverManager.java:208) ~[na:1.8.0_181]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:154) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:145) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy61.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy70.selectByKeyAndPassword(Unknown Source) ~[na:na]
+	at com.example.hotel_demo.service.user.impl.UserServiceImpl.selectByKeyAndPassword(UserServiceImpl.java:24) ~[classes/:na]
+	at com.example.hotel_demo.controller.UserController.userOrAdminLogin(UserController.java:81) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-05-04 19:55:23.971 DEBUG 10396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2019-05-04 19:55:23.972 DEBUG 10396 --- [http-nio-8080-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-04 19:55:23.973 DEBUG 10396 --- [http-nio-8080-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-05-04 19:55:30.402 DEBUG 10396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/user/userOrAdminLogin", parameters={masked}
+2019-05-04 19:55:30.404 DEBUG 10396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.UserController.userOrAdminLogin(com.example.hotel_demo.model.User,java.lang.String,javax.servlet.http.HttpSession,org.springframework.ui.Model) throws java.lang.Exception
+2019-05-04 19:55:30.422 DEBUG 10396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in com/example/hotel_demo/mapper/UserMapper.java (best guess)
+### The error may involve com.example.hotel_demo.mapper.UserMapper.selectByKeyAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+2019-05-04 19:55:30.424 ERROR 10396 --- [http-nio-8080-exec-6] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in com/example/hotel_demo/mapper/UserMapper.java (best guess)
+### The error may involve com.example.hotel_demo.mapper.UserMapper.selectByKeyAndPassword
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.] with root cause
+
+com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2241) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2265) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_181]
+	at java.sql.DriverManager.getConnection(DriverManager.java:208) ~[na:1.8.0_181]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:154) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:145) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectOne(DefaultSqlSession.java:76) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy61.selectOne(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectOne(SqlSessionTemplate.java:166) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:87) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy70.selectByKeyAndPassword(Unknown Source) ~[na:na]
+	at com.example.hotel_demo.service.user.impl.UserServiceImpl.selectByKeyAndPassword(UserServiceImpl.java:24) ~[classes/:na]
+	at com.example.hotel_demo.controller.UserController.userOrAdminLogin(UserController.java:81) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:908) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:665) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-05-04 19:55:30.425 DEBUG 10396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for POST "/error", parameters={masked}
+2019-05-04 19:55:30.426 DEBUG 10396 --- [http-nio-8080-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-04 19:55:30.427 DEBUG 10396 --- [http-nio-8080-exec-6] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-05-04 19:55:42.206 DEBUG 10396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/room/findRoomByExample", parameters={}
+2019-05-04 19:55:42.206 DEBUG 10396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public java.lang.String com.example.hotel_demo.controller.RoomController.findRoomByExample(org.springframework.ui.Model,com.example.hotel_demo.model.Room,javax.servlet.http.HttpSession) throws java.lang.Exception
+2019-05-04 19:55:42.247 DEBUG 10396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Failed to complete request: org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in file [E:\IDEA\hotel_demo\target\classes\mapper\OrderdetailsMapper.xml]
+### The error may involve com.example.hotel_demo.mapper.OrderdetailsMapper.selectByExample
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+2019-05-04 19:55:42.249 ERROR 10396 --- [http-nio-8080-exec-7] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception [Request processing failed; nested exception is org.mybatis.spring.MyBatisSystemException: nested exception is org.apache.ibatis.exceptions.PersistenceException: 
+### Error querying database.  Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+### The error may exist in file [E:\IDEA\hotel_demo\target\classes\mapper\OrderdetailsMapper.xml]
+### The error may involve com.example.hotel_demo.mapper.OrderdetailsMapper.selectByExample
+### The error occurred while executing a query
+### Cause: org.springframework.jdbc.CannotGetJdbcConnectionException: Failed to obtain JDBC Connection; nested exception is java.sql.SQLException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.] with root cause
+
+com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value 'ÖÐ¹ú±ê×¼Ê±¼ä' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:1.8.0_181]
+	at java.lang.reflect.Constructor.newInstance(Constructor.java:423) ~[na:1.8.0_181]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2241) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2265) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1319) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:966) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:825) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:455) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:240) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199) ~[mysql-connector-java-8.0.15.jar:8.0.15]
+	at java.sql.DriverManager.getConnection(DriverManager.java:664) ~[na:1.8.0_181]
+	at java.sql.DriverManager.getConnection(DriverManager.java:208) ~[na:1.8.0_181]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriverManager(DriverManagerDataSource.java:154) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DriverManagerDataSource.getConnectionFromDriver(DriverManagerDataSource.java:145) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnectionFromDriver(AbstractDriverBasedDataSource.java:205) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.AbstractDriverBasedDataSource.getConnection(AbstractDriverBasedDataSource.java:169) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.fetchConnection(DataSourceUtils.java:157) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.doGetConnection(DataSourceUtils.java:115) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.jdbc.datasource.DataSourceUtils.getConnection(DataSourceUtils.java:78) ~[spring-jdbc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.openConnection(SpringManagedTransaction.java:82) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.mybatis.spring.transaction.SpringManagedTransaction.getConnection(SpringManagedTransaction.java:68) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.executor.BaseExecutor.getConnection(BaseExecutor.java:336) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.prepareStatement(SimpleExecutor.java:85) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.SimpleExecutor.doQuery(SimpleExecutor.java:62) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.queryFromDatabase(BaseExecutor.java:324) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.BaseExecutor.query(BaseExecutor.java:156) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:109) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.executor.CachingExecutor.query(CachingExecutor.java:83) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.session.defaults.DefaultSqlSession.selectList(DefaultSqlSession.java:140) ~[mybatis-3.5.1.jar:3.5.1]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.mybatis.spring.SqlSessionTemplate$SqlSessionInterceptor.invoke(SqlSessionTemplate.java:433) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at com.sun.proxy.$Proxy61.selectList(Unknown Source) ~[na:na]
+	at org.mybatis.spring.SqlSessionTemplate.selectList(SqlSessionTemplate.java:230) ~[mybatis-spring-2.0.1.jar:2.0.1]
+	at org.apache.ibatis.binding.MapperMethod.executeForMany(MapperMethod.java:147) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperMethod.execute(MapperMethod.java:80) ~[mybatis-3.5.1.jar:3.5.1]
+	at org.apache.ibatis.binding.MapperProxy.invoke(MapperProxy.java:58) ~[mybatis-3.5.1.jar:3.5.1]
+	at com.sun.proxy.$Proxy68.selectByExample(Unknown Source) ~[na:na]
+	at com.example.hotel_demo.service.orderdetails.impl.OrderdetailServiceImpl.selectByExample(OrderdetailServiceImpl.java:34) ~[classes/:na]
+	at com.example.hotel_demo.controller.RoomController.findRoomByExample(RoomController.java:41) ~[classes/:na]
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:1.8.0_181]
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62) ~[na:1.8.0_181]
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:1.8.0_181]
+	at java.lang.reflect.Method.invoke(Method.java:498) ~[na:1.8.0_181]
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:189) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:102) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:892) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:797) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1038) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:942) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:897) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:645) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:882) ~[spring-webmvc-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:750) ~[javax.servlet-api-4.0.1.jar:4.0.1]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53) ~[tomcat-embed-websocket-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:92) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:200) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107) ~[spring-web-5.1.6.RELEASE.jar:5.1.6.RELEASE]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:200) ~[tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:490) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:139) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:408) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:834) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1415) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149) [na:1.8.0_181]
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624) [na:1.8.0_181]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) [tomcat-embed-core-9.0.17.jar:9.0.17]
+	at java.lang.Thread.run(Thread.java:748) [na:1.8.0_181]
+
+2019-05-04 19:55:42.250 DEBUG 10396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2019-05-04 19:55:42.251 DEBUG 10396 --- [http-nio-8080-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2019-05-04 19:55:42.251 DEBUG 10396 --- [http-nio-8080-exec-7] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 500
+2019-05-04 19:55:53.255  INFO 10396 --- [Thread-8] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
