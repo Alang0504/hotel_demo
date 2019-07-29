@@ -5,9 +5,7 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-//@MapperScan("com.example.hotel_demo.mapper")
-//测试合并分支
-//测试合并分支第二种情况，直接在该分支push在合并
+//@MapperScan("com.example.hotel_demo.mapper")s
 public class HotelDemoApplication {
 
     public static void main(String[] args) {
