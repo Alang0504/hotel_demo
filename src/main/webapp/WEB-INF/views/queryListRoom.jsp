@@ -136,7 +136,7 @@
         <form name="roomForm" action="/room/findRoomByExample" method="post">
             <div class="roomPageDiv1">
             <table class="queryTable">
-                <tr><th class="queryTableProperty"><input class="roomHeadButton" type="button" name="category" value="首页" onclick="selectroomfour()"/></th><th class="queryTableProperty"><input class="roomHeadButton"  type="button" value="标准" name="category" onclick="selectroomOne()"/></th><th class="queryTableProperty"><input class="roomHeadButton"  type="button" name="category" value="豪华" onclick="selectroomTwo()"/></th class="queryTableProperty"><th><input class="roomHeadButton"  type="button" name="category" value="主题房" onclick="selectroomFive()"/></th><th class="queryTableProperty"><input class="roomHeadButton"  type="button" name="category" value="特价房" onclick="selectroomThree()"/></th></tr>
+                <tr><th class="queryTableProperty"><input class="roomHeadButton" type="button" name="category" value="首页" onclick="selectroomfour()"/><th class="queryTableProperty"><input class="roomHeadButton"  type="button" value="标准" name="category" onclick="selectroomOne()"/><th class="queryTableProperty"><input class="roomHeadButton"  type="button" name="category" value="豪华" onclick="selectroomTwo()"/><th class="queryTableProperty"><input class="roomHeadButton"  type="button" name="category" value="主题房" onclick="selectroomFive()"/><th class="queryTableProperty"><input class="roomHeadButton"  type="button" name="category" value="特价房" onclick="selectroomThree()"/></tr>
             </table>
             </div>
             <div class="roomPageDiv2">
