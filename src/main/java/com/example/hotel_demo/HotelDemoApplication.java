@@ -8,8 +8,6 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 //@MapperScan("com.example.hotel_demo.mapper")
 //测试在dev分支加东西
 //测试在dev分支加东西
-//测试在dev分支加东西
-//测试在dev分支加东西
 public class HotelDemoApplication {
 
     public static void main(String[] args) {
